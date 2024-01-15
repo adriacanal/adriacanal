@@ -31,7 +31,7 @@ class About extends Me
     
     public function getInTouch():void
     {
-        Mail::to('hello@adriacanal.dev')->send(new ContactMail());
+        Mail::to('adriacanal92@gmail.com')->send(new ContactMail());
     }
     
 }
