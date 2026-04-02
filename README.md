@@ -17,16 +17,28 @@ class About extends Me
             ]
         ];
     }
-    
-    public function getCurrentKnowledge(): array
+
+    public function currentlyLearning(): array
     {
         return [
-            Php::class,
-            Laravel::class,
-            TailwindCss::class,
-            AlpineJs::class,
-            Livewire::class
+            'AWS',
+            'Systems Architecture',
+            'CI/CD Pipelines',
         ];
+    }
+    
+    public function getStack(): array
+    {
+        return [
+            'backend'  => [Php::class, Laravel::class],
+            'frontend' => [TailwindCss::class, Livewire::class],
+            'tooling'  => [Docker::class],
+        ];
+    }
+
+    public function offCode(): array
+    {
+        return ['Father of two 👶👶', 'Vegan 🌱'];
     }
     
     public function getInTouch():void
